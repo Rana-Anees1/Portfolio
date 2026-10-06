@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Rana Anees — MERN Stack Developer &amp; Software Engineer</title>
+    <meta
+      name="description"
+      content="Rana Anees is a MERN Stack Developer and Software Engineer building modern, responsive web applications with MongoDB, Express.js, React and Node.js."
+    />
+    <meta name="author" content="Rana Anees" />
+    <meta name="theme-color" content="#120b1f" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-- Apply the saved (or system) theme before first paint to avoid a flash. -->
+    <script>
+      (function () {
+        var theme = 'dark';
+        try {
+          var saved = localStorage.getItem('theme');
+          theme = saved === 'light' || saved === 'dark' ? saved : matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        } catch (e) {}
+        var root = document.documentElement;
+        root.dataset.theme = theme;
+        root.style.colorScheme = theme;
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'light' ? '#f5f3fa' : '#120b1f');
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" as="image" href="/images/rana-anees-avatar.jpg" />
+
+    <!-- Open Graph / social previews. Replace the URL with your deployed domain. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rana Anees — MERN Stack Developer &amp; Software Engineer" />
+    <meta
+      property="og:description"
+      content="MERN Stack Developer focused on building modern web applications and responsive user experiences."
+    />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:url" content="https://your-domain.vercel.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rana Anees — MERN Stack Developer &amp; Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="MERN Stack Developer focused on building modern web applications and responsive user experiences."
+    />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Caveat:wght@500;600&family=Figtree:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
